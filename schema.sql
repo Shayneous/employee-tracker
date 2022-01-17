@@ -1,8 +1,10 @@
+DROP DATABASE IF EXISTS employees_DB;
+
 CREATE DATABASE employees-DB;
 USE employees_DB
 
 -- Table for Employees
-CREATE TABLE employee (
+CREATE TABLE employees (
     id INT NOT NULL AUTO_INCREMENT,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
@@ -22,7 +24,7 @@ CREATE TABLE roles (
 )
 
 -- Table for Departments
-CREATE TABLE department (
+CREATE TABLE departments (
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(30) NOT NULL,
     PRIMARY KEY (id)
