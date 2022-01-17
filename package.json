@@ -2,7 +2,7 @@
   "name": "employee-tracker",
   "version": "1.0.0",
   "description": "App that can view and manage departments, roles, and employees in a company.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +19,8 @@
   "dependencies": {
     "console.table": "^0.10.0",
     "inquirer": "^8.2.0",
+    "mysql": "^2.18.1",
+    "mysql-promise": "^5.0.0",
     "mysql2": "^2.3.3"
   }
 }

@@ -5,9 +5,14 @@ const consoleTable = require("console.table")
 // Connect to msql db
 
 const connection = mysql.createConnection({
-    host: "localhost",
+    host: 'localhost',
     port: 3306,
-    user: "root",
-    password: "BaSeCeY11!",
-    database: "employees_db"
+    user: 'root',
+    password: 'BaSeCeY11!',
+    database: 'employees_DB'
+})
+
+connection.connect(function(err){
+    if (err) throw err;
+    options();
 })
